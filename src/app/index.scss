@@ -61,6 +61,15 @@ section.jumbotron {
   }
 }
 
+$background-color: #33b584;
+
+.my-item{
+  h1{
+    color: $background-color;
+  }
+  //width: 20%;
+}
+
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
