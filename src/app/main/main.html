@@ -3,6 +3,49 @@
 <h1>my starting page</h1>
 </div>
 
+<div layout="row" layout-wrap layout-margin layout-padding layout-align="center center">
+  <md-toolbar flex="100">
+    <h1>Game Play Analytics for {{startDate | date: 'mediumDate'}} - {{ Date.now() | date: 'mediumDate' }}</h1>
+  </md-toolbar>
+  <div flex="100" layout="row" layout-align="start center">
+    <md-input-container flex="40">
+      <label for="startDate">Enter a start date</label>
+      <input type="date" name="" id="startDate" ng-model="startDate"/>
+    </md-input-container>
+    <md-button ng-click="getAnalytics(startDate)" class="md-primary md-raised" xflex="20">Gather Analytics</md-button>
+  </div>
+  <!--<div flex="40">-->
+  <!--</div>-->
+
+  <div flex="100" ng-if="loading" class="md-primary" class="stat-box">
+    <h1>Fetching analytics</h1>
+    <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+  </div>
+
+  <md-card flex="20" class="stat-box">
+    <h1>{{analytics.newUsers.length}}</h1>
+    <h2>New profiles created.</h2>
+  </md-card>
+
+  <md-card flex="20" class="stat-box">
+    <h1>{{analytics.androidUsers.length}}</h1>
+    <h2>Android devices</h2>
+  </md-card>
+  <md-card flex="20" class="stat-box">
+    <h1>{{analytics.iosUsers.length}}</h1>
+    <h2>iOS devices</h2>
+  </md-card>
+
+  <md-card flex="20" class="stat-box">
+    <h1>{{analytics.stonefireClosers.length}}</h1>
+    <h2>Closed the stonefire.</h2>
+    <!--<p ng-repeat="winner in analytics.stonefireClosers | limitTo: 5">-->
+    <!--{{winner.profile.displayName || winner.profile.email.split('@')[0]}}-->
+    <!--</p>-->
+  </md-card>
+</div>
+
+
 <!-- <div layout="vertical" layout-fill>
 
   <md-content>
