@@ -3,7 +3,7 @@
 <h1>my starting page</h1>
 </div>
 
-<div layout="row" layout-wrap layout-margin layout-padding layout-align="center center">
+<!-- <div layout="row" layout-wrap layout-margin layout-padding layout-align="center center">
   <md-toolbar flex="100">
     <h1>Game Play Analytics for {{startDate | date: 'mediumDate'}} - {{ Date.now() | date: 'mediumDate' }}</h1>
   </md-toolbar>
@@ -13,11 +13,12 @@
       <input type="date" name="" id="startDate" ng-model="startDate"/>
     </md-input-container>
     <md-button ng-click="getAnalytics(startDate)" class="md-primary md-raised" xflex="20">Gather Analytics</md-button>
-  </div>
+  </div> -->
+
   <!--<div flex="40">-->
   <!--</div>-->
 
-  <div flex="100" ng-if="loading" class="md-primary" class="stat-box">
+  <!-- <div flex="100" ng-if="loading" class="md-primary" class="stat-box">
     <h1>Fetching analytics</h1>
     <md-progress-circular md-mode="indeterminate"></md-progress-circular>
   </div>
@@ -41,9 +42,11 @@
     <h2>Closed the stonefire.</h2>
     <!--<p ng-repeat="winner in analytics.stonefireClosers | limitTo: 5">-->
     <!--{{winner.profile.displayName || winner.profile.email.split('@')[0]}}-->
-    <!--</p>-->
+    <!--</p> -->
+
+    <!--
   </md-card>
-</div>
+</div> -->
 
 
 <!-- <div layout="vertical" layout-fill>
