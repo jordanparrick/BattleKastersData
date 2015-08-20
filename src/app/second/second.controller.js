@@ -3,41 +3,42 @@
 
   angular
     .module('battleKasterData')
-    .controller('MainController', MainController);
+    .controller('SecondController', MainController);
 
   /** @ngInject */
   function MainController($timeout, webDevTec, toastr) {
-    var main = this;
+    var second = this;
 
-    main.greeting = 'Welcome';
+    second.greeting = 'Second Welcome';
+
 
 
 
 
 // Seth's code
-    main.awesomeThings = [];
-    main.classAnimation = '';
-    main.creationDate = 1438801089625;
-    main.showToastr = showToastr;
+    second.awesomeThings = [];
+    second.classAnimation = '';
+    second.creationDate = 1438801089625;
+    second.showToastr = showToastr;
 
     activate();
 
     function activate() {
       getWebDevTec();
       $timeout(function() {
-        main.classAnimation = 'rubberBand';
+        second.classAnimation = 'rubberBand';
       }, 4000);
     }
 
     function showToastr() {
       toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      main.classAnimation = '';
+      second.classAnimation = '';
     }
 
     function getWebDevTec() {
-      main.awesomeThings = webDevTec.getTec();
+      second.awesomeThings = webDevTec.getTec();
 
-      angular.forEach(main.awesomeThings, function(awesomeThing) {
+      angular.forEach(second.awesomeThings, function(awesomeThing) {
         awesomeThing.rank = Math.random();
       });
     }

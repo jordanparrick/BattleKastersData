@@ -14,20 +14,24 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .state('tutorial', {
-        url: '/tutorial',
-        templateUrl: 'app/tutorial/tutorial.html',
-        controller: 'TutorialController',
-        controllerAs: 'tutorial'
+      .state('testPage', {
+        url: '/TestPage',
+        templateUrl: 'app/TestPage/mychart.html',
+        controller: '',
+        controllerAs: ''
       })
-      .state('route2', {
-        url: '/route2',
-        templateUrl: 'app/tutorial/route2.html',
-        controller: 'TutorialController',
-        controllerAs: 'tutorial'
+      .state('testPage2', {
+        url: '/TestPage2',
+        templateUrl: 'app/TestPage2/mychart2.html',
+        controller: '',
+        controllerAs: ''
       })
-
-
+      .state('secondPage', {
+        url: '/second',
+        templateUrl: 'app/second/second.html',
+        controller: 'SecondController',
+        controllerAs: 'second'
+      })
     ;
 
     $urlRouterProvider.otherwise('/');

@@ -5,6 +5,11 @@
     .module('battleKasterData')
     .controller('TutorialController', TutorialController);
 
+    angular.module('FirstModule', []).
+    controller('MainCtrl', function($scope) {
+    $scope.hello = 'world'
+    });
+    
   /** @ngInject */
   function TutorialController($timeout, webDevTec, toastr) {
     var vm = this;
