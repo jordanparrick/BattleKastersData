@@ -1,0 +1,36 @@
+<!--<meta charset="utf-8">-->
+<!--<link href="/bower_components/nvd3/build/nv.d3.min.css" rel="stylesheet" type="text/css">-->
+<!--<script src="/bower_components/d3/d3.min.js"></script>-->
+<!--<script src="/bower_components/nvd3/build/nv.d3.min.js"></script>-->
+
+
+<div ng-if="g.loading">
+  <h1>I am loading data now....</h1>
+</div>
+
+
+<div class='graph-title'>
+	<h1>User Drop-Off by Quest</h1>
+</div>
+
+<div class='description'>
+	<p>The percentage of users who started each quest.</p>
+</div>
+
+
+<div id='chart2'>
+	<svg>
+	<script src="graph.js"></script>
+	</svg>
+</div>
+
+
+
+
+
+
+<style>
+  #chart2 svg {
+    height: 400px;
+  }
+</style>

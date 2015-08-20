@@ -14,11 +14,11 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .state('testPage', {
-        url: '/TestPage',
-        templateUrl: 'app/TestPage/mychart.html',
-        controller: '',
-        controllerAs: ''
+      .state('graph', {
+        url: '/graph',
+        templateUrl: 'app/graph/graph.html',
+        controller: 'GraphController',
+        controllerAs: 'g'
       })
       .state('testPage2', {
         url: '/TestPage2',

@@ -6,6 +6,7 @@
     .module('battleKasterData')
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
-    .constant('moment', moment);
+    .constant('moment', moment)
+    .constant('baseUrl', "https://orkney-pax.herokuapp.com");
 
 })();
