@@ -7,6 +7,6 @@
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment)
-    .constant('baseUrl', "https://orkney-pax.herokuapp.com");
+    .constant('baseUrl', "http://orkneyv1-2.artifacttech.com:3001");
 
 })();
